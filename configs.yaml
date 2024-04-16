@@ -1,3 +1,26 @@
+zmxj:
+  short_name: zmxj
+  dmvio_folder: /home/zmxj/code/dm-vio
+  pc_config_path:
+  pc_config_command: apt list
+  slurm: false
+  results_path: /home/zmxj/code/dm-vio/result
+  tumvi:
+    dataset_path: /home/zmxj/code/Datasets/Tumvi
+    results_path: /home/zmxj/code/dm-vio/result
+zmxjpc:
+  short_name: zmxjpc
+  dmvio_folder: /home/zmxj/code/dm-vio
+  pc_config_path:
+  pc_config_command: apt list
+  slurm: false
+  results_path: /home/zmxj/code/dm-vio/result
+  euroc:
+    dataset_path: /home/zmxj/code/Datasets/Euroc_dmvio
+    results_path: /home/zmxj/code/dm-vio/result
+  tumvi:
+    dataset_path: /home/zmxj/code/Datasets/Tumvi
+    results_path: /home/zmxj/code/dm-vio/result
 example_config:
   short_name: example
   dmvio_folder: /path/to/dmvio
