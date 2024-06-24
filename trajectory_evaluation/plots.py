@@ -119,10 +119,13 @@ def line_plot_base(results: List[EvalResults], threshold=2.0):
     plt.figure()
     for i, sorted_errors in enumerate(sorted_errors_all):
         sorted_errors[sorted_errors == np.inf] = 2000  # to show them in plot
-        plt.plot(sorted_errors, np.arange(sorted_errors.size), label=results[i].name)
-    plt.axis([0, threshold, 0, len(sorted_errors)])
+        # plt.plot(sorted_errors, np.arange(sorted_errors.size), label=results[i].name)
+        plt.plot(np.arange(sorted_errors.size), sorted_errors, label=results[i].name)
+    plt.axis([0, len(sorted_errors), 0, threshold])
     plt.grid(True)
-    plt.legend(loc='lower left')
+    plt.xlabel('number of runs', fontsize=12)
+    plt.ylabel('drift(%)', fontsize=12)
+    plt.legend(loc='upper left')
     plt.show()
 
 

@@ -8,18 +8,15 @@ zmxj:
   tumvi:
     dataset_path: /home/zmxj/code/Datasets/Tumvi
     results_path: /home/zmxj/code/dm-vio/result
-zmxjpc:
-  short_name: zmxjpc
-  dmvio_folder: /home/zmxj/code/dm-vio
-  pc_config_path:
-  pc_config_command: apt list
-  slurm: false
-  results_path: /home/zmxj/code/dm-vio/result
+
   euroc:
-    dataset_path: /home/zmxj/code/Datasets/Euroc_dmvio
+    dataset_path: /home/zmxj/code/Datasets/Euroc
     results_path: /home/zmxj/code/dm-vio/result
-  tumvi:
-    dataset_path: /home/zmxj/code/Datasets/Tumvi
+  4seasons:
+    dataset_path: /home/zmxj/code/Datasets/4seasons
+    results_path: /home/zmxj/code/dm-vio/result
+  4seasonsCR:
+    dataset_path: /home/zmxj/code/Datasets/4seasons
     results_path: /home/zmxj/code/dm-vio/result
 example_config:
   short_name: example
